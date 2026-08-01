@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Nordlöf Systems</title>
+  <desc id="desc">Digitala system som gör uthyrning enklare</desc>
+  <defs>
+    <radialGradient id="g" cx="78%" cy="24%" r="68%"><stop offset="0" stop-color="#173a46" stop-opacity=".72"/><stop offset="1" stop-color="#06131b"/></radialGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#f3ead4" stroke-opacity=".035"/></pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <g fill="none" stroke="#f3ead4" stroke-width="4">
+    <path d="M72 122V50l56 72V50"/>
+    <path d="M196 57c-14-11-51-12-54 10-2 15 13 20 29 24 18 5 31 10 28 24-4 19-42 18-57 5" opacity=".82"/>
+  </g>
+  <path d="M55 147h167" stroke="#e86b3f" stroke-width="3"/>
+  <text x="256" y="104" fill="#f3ead4" font-family="Helvetica Neue,Arial,sans-serif" font-size="35" font-weight="600" letter-spacing="6">NORDLÖF SYSTEMS</text>
+  <text x="72" y="292" fill="#f3ead4" font-family="Helvetica Neue,Arial,sans-serif" font-size="73" font-weight="650" letter-spacing="-3">Digitala system som gör</text>
+  <text x="72" y="374" fill="#f3ead4" font-family="Helvetica Neue,Arial,sans-serif" font-size="73" font-weight="650" letter-spacing="-3">uthyrning enklare.</text>
+  <text x="76" y="452" fill="#9aa7a9" font-family="Helvetica Neue,Arial,sans-serif" font-size="26">Webb · bokning · lager · dokument · integrationer</text>
+  <rect x="76" y="506" width="506" height="62" rx="4" fill="#d8ff45"/>
+  <text x="103" y="545" fill="#06131b" font-family="Helvetica Neue,Arial,sans-serif" font-size="20" font-weight="700" letter-spacing=".4">SYSTEMUTVECKLING FÖR UTHYRNING</text>
+  <circle cx="1116" cy="544" r="8" fill="#d8ff45"/>
+  <text x="956" y="550" fill="#f3ead4" font-family="Consolas,monospace" font-size="16" letter-spacing="2">MALMÖ · SE</text>
+</svg>

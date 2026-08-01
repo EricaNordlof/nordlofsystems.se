@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="170" viewBox="0 0 800 170" role="img" aria-labelledby="title desc">
+  <title id="title">Nordlöf Systems</title>
+  <desc id="desc">NS-monogram och ordmärket Nordlöf Systems</desc>
+  <rect width="800" height="170" fill="#06131b"/>
+  <g fill="none" stroke="#f3ead4" stroke-width="4" stroke-linecap="square">
+    <path d="M45 112V40l56 72V40"/>
+    <path d="M167 47c-13-10-50-12-53 10-2 15 13 20 29 24 18 5 31 10 28 24-4 19-42 18-57 5" opacity=".86"/>
+  </g>
+  <path d="M31 137h166" stroke="#e86b3f" stroke-width="3"/>
+  <text x="236" y="96" fill="#f3ead4" font-family="Helvetica Neue,Arial,sans-serif" font-size="44" font-weight="600" letter-spacing="7">NORDLÖF SYSTEMS</text>
+  <text x="239" y="130" fill="#9aa7a9" font-family="Consolas,monospace" font-size="15" letter-spacing="4">SYSTEM · ARCHITECTURE · CODE</text>
+</svg>

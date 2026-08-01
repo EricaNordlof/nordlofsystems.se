@@ -1,0 +1,46 @@
+# Nordlöf Systems
+
+Website: https://nordlofsystems.se/
+Language: Swedish
+Brand: Nordlöf Systems
+Legal business name: Nordlöf Nordic
+Business form: Swedish sole proprietorship based in Malmö
+Organisation number: 861225-3966
+Founder: Erica Nordlöf
+Email: erica@webutvecklare.se
+Phone: 079-344 25 20
+
+## Purpose
+
+Nordlöf Systems provides freelance system development for rental businesses and smaller companies throughout Sweden. The specialisation is rental workflows: websites, booking, inventory availability, quotations, customer portals, rental documentation, integrations and automation.
+
+## Positioning
+
+Nordlöf Systems combines software development with first-hand experience from running Offroad Bumpis, a real rental business. Assignments are deliberately scoped, documented and tested. The company accepts direct assignments, subcontracting work and relevant smaller assignments through platforms such as Partna.
+
+## Selected work
+
+- Offroad Bumpis: live rental business, SEO website and booking/administration workflows.
+- Safe Standard: rental documentation product concept with agreements, checklists, damage invoices, PDF and public verification.
+- Bumperball Leadgenerator: PostgreSQL lead pipeline with scoring, deduplication, Gmail drafts and booking handoff.
+- RentChain: privacy-first rental portfolio concept with off-chain personal data and SHA-256 integrity proofs.
+- FlowForge Java Platform and Mini API: Java, Spring Boot, REST, PostgreSQL, validation, tests, Docker and CI.
+- Additional portfolio work includes AI workflows, document analysis, property management, networking labs and static SEO websites.
+
+## Main pages
+
+- Home: https://nordlofsystems.se/
+- Services: https://nordlofsystems.se/tjanster.html
+- Solutions: https://nordlofsystems.se/losningar.html
+- Cases: https://nordlofsystems.se/case.html
+- About: https://nordlofsystems.se/om.html
+- Collaboration: https://nordlofsystems.se/samarbeta.html
+- Contact: https://nordlofsystems.se/kontakt.html
+
+## Contact
+
+Nordlöf Systems
+A brand of Nordlöf Nordic
+Lövviksgatan 10
+213 74 Malmö
+Sweden

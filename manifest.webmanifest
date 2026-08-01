@@ -1,0 +1,15 @@
+{
+  "name": "Nordlöf Systems",
+  "short_name": "Nordlöf Systems",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#06131b",
+  "theme_color": "#06131b",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
