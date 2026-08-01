@@ -43,7 +43,7 @@ if (form) {
       "Det här vill jag lösa:",
       need,
     ].join("\n");
-    window.location.href = `mailto:erica@webutvecklare.se?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:erica@nordlofsystems.se?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   });
 }
 

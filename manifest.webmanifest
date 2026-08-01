@@ -1,6 +1,7 @@
 {
   "name": "Nordlöf Systems",
   "short_name": "Nordlöf Systems",
+  "description": "Erica Nordlöfs CV, systemprojekt och tjänster inom verksamhetsnära systemutveckling.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#06131b",
