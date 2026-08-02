@@ -28,6 +28,7 @@ Ingen byggprocess krävs.
 - Direkta länkar till GitHub och LinkedIn.
 - Samarbetsvägar för frilans, Partna, underkonsult, extrajobb, framtida LIA och utvecklarroller.
 - 18 innehållsrika SEO-sidor för uthyrningssystem, branscher och utvecklartjänster.
-- Mobilmeny, tangentbordsstöd, reducerad rörelse och tydliga fokusmarkeringar.
+- Mobiloptimering för små skärmar från 320 px, inklusive iPhone 13 mini, med brytbara rubriker, säkra sidmarginaler, fullbreddsknappar och mobilmeny.
+- Tangentbordsstöd, reducerad rörelse och tydliga fokusmarkeringar.
 - Canonical, Open Graph, person- och företagsdata i JSON-LD, sitemap, robots och llms.txt.
-- Premiumlogotyp, favicon och social delningsbild i SVG.
+- Premiumlogotyp, Safari-favicon, Apple Touch Icon, webbappikoner och social delningsbild.
