@@ -20,7 +20,7 @@ Ingen byggprocess krävs.
 
 ## Innehåll
 
-- Mörk premiumdesign i riktningen Dark Technical Atelier.
+- Ljus skandinavisk premiumdesign med redaktionell typografi, varm elfenbenston och djup tealaccent.
 - Startsida som förenar kunderbjudande, CV och jobbsökning.
 - Utbyggd sida `Erica & CV` med YH-utbildningen Fullstack Java vid Chas Academy i Malmö, erfarenhet, kompetens och vad Erica söker.
 - Ensidigt PDF-CV: `erica-nordlof-cv.pdf`.

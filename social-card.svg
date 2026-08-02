@@ -2,22 +2,26 @@
   <title id="title">Erica Nordlöf och Nordlöf Systems</title>
   <desc id="desc">Systemutvecklare, företagare och specialist på digitala uthyrningsflöden</desc>
   <defs>
-    <radialGradient id="g" cx="78%" cy="24%" r="68%"><stop offset="0" stop-color="#173a46" stop-opacity=".72"/><stop offset="1" stop-color="#06131b"/></radialGradient>
-    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#f3ead4" stroke-opacity=".035"/></pattern>
+    <radialGradient id="warm" cx="88%" cy="5%" r="66%"><stop offset="0" stop-color="#ead1b7" stop-opacity=".8"/><stop offset="1" stop-color="#f8f5ef"/></radialGradient>
+    <radialGradient id="cool" cx="5%" cy="100%" r="58%"><stop offset="0" stop-color="#c9dfdc" stop-opacity=".72"/><stop offset="1" stop-color="#f8f5ef" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#102e38" stroke-opacity=".035"/></pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect width="1200" height="630" fill="url(#warm)"/>
+  <rect width="1200" height="630" fill="url(#cool)"/>
   <rect width="1200" height="630" fill="url(#grid)"/>
-  <g fill="none" stroke="#f3ead4" stroke-width="4">
-    <path d="M72 122V50l56 72V50"/>
-    <path d="M196 57c-14-11-51-12-54 10-2 15 13 20 29 24 18 5 31 10 28 24-4 19-42 18-57 5" opacity=".82"/>
-  </g>
-  <path d="M55 147h167" stroke="#e86b3f" stroke-width="3"/>
-  <text x="256" y="104" fill="#f3ead4" font-family="Helvetica Neue,Arial,sans-serif" font-size="35" font-weight="600" letter-spacing="6">NORDLÖF SYSTEMS</text>
-  <text x="72" y="292" fill="#f3ead4" font-family="Helvetica Neue,Arial,sans-serif" font-size="73" font-weight="650" letter-spacing="-3">Erica Nordlöf</text>
-  <text x="72" y="374" fill="#f3ead4" font-family="Helvetica Neue,Arial,sans-serif" font-size="73" font-weight="650" letter-spacing="-3">Systemutvecklare.</text>
-  <text x="76" y="452" fill="#9aa7a9" font-family="Helvetica Neue,Arial,sans-serif" font-size="26">CV · systemprojekt · frilans · uthyrningssystem</text>
-  <rect x="76" y="506" width="506" height="62" rx="4" fill="#d8ff45"/>
-  <text x="103" y="545" fill="#06131b" font-family="Helvetica Neue,Arial,sans-serif" font-size="20" font-weight="700" letter-spacing=".4">SYSTEM SOM FUNGERAR I VERKLIGHETEN</text>
-  <circle cx="1116" cy="544" r="8" fill="#d8ff45"/>
-  <text x="956" y="550" fill="#f3ead4" font-family="Consolas,monospace" font-size="16" letter-spacing="2">MALMÖ · SE</text>
+  <rect x="70" y="58" width="1060" height="514" rx="38" fill="#ffffff" fill-opacity=".7" stroke="#102e38" stroke-opacity=".1"/>
+  <rect x="104" y="91" width="92" height="92" rx="24" fill="#102e38"/>
+  <path d="M121 157v-40l28 40v-40M180 122c-7-6-25-6-26 5-1 8 7 11 15 13 9 3 15 5 14 12-2 10-21 9-29 3" fill="none" stroke="#fffaf2" stroke-width="3" stroke-linecap="round"/>
+  <path d="M120 169h62" stroke="#c28a59" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="226" y="135" fill="#102e38" font-family="Iowan Old Style,Baskerville,Georgia,serif" font-size="39" font-weight="600">Nordlöf</text>
+  <text x="229" y="169" fill="#66777a" font-family="Avenir Next,Segoe UI,Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="7">SYSTEMS</text>
+  <text x="104" y="315" fill="#102e38" font-family="Iowan Old Style,Baskerville,Georgia,serif" font-size="78" font-weight="600" letter-spacing="-2">Erica Nordlöf</text>
+  <text x="104" y="399" fill="#102e38" font-family="Iowan Old Style,Baskerville,Georgia,serif" font-size="78" font-style="italic" letter-spacing="-2">Systemutvecklare.</text>
+  <text x="108" y="462" fill="#66777a" font-family="Avenir Next,Segoe UI,Arial,sans-serif" font-size="23">CV · systemprojekt · frilans · uthyrningssystem</text>
+  <rect x="104" y="500" width="456" height="48" rx="24" fill="#102e38"/>
+  <text x="133" y="531" fill="#fffaf2" font-family="Avenir Next,Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="1">SYSTEM SOM FUNGERAR I VERKLIGHETEN</text>
+  <path d="M922 154c88 42 134 114 137 216 2 80-26 140-84 181" fill="none" stroke="#c28a59" stroke-width="2" stroke-opacity=".72"/>
+  <circle cx="1019" cy="218" r="10" fill="#102e38"/>
+  <circle cx="1058" cy="371" r="8" fill="#c28a59"/>
+  <text x="916" y="526" fill="#102e38" font-family="SFMono-Regular,Consolas,monospace" font-size="15" letter-spacing="2">MALMÖ · SE</text>
 </svg>

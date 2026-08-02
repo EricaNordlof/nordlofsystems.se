@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
   <title id="title">Nordlöf Systems</title>
-  <rect width="64" height="64" rx="8" fill="#06131b"/>
-  <path d="M10 43V18l18 25V18M52 21c-6-5-19-5-20 3-1 6 5 8 11 10 7 2 12 4 11 9-2 8-15 7-22 3" fill="none" stroke="#f3ead4" stroke-width="3" stroke-linecap="square"/>
-  <path d="M9 52h46" stroke="#e86b3f" stroke-width="2"/>
-  <circle cx="53" cy="11" r="3" fill="#d8ff45"/>
+  <rect width="64" height="64" rx="16" fill="#f8f5ef"/>
+  <rect x="6" y="6" width="52" height="52" rx="14" fill="#102e38"/>
+  <path d="M14 42V21l15 21V21M48 24c-5-4-15-4-16 3-1 5 4 7 9 8 6 2 10 4 9 8-1 6-12 6-18 2" fill="none" stroke="#fffaf2" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M14 49h36" stroke="#c28a59" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="50" cy="15" r="2.6" fill="#c28a59"/>
 </svg>
