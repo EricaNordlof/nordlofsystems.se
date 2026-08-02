@@ -22,7 +22,7 @@ Ingen byggprocess krävs.
 
 - Mörk premiumdesign i riktningen Dark Technical Atelier.
 - Startsida som förenar kunderbjudande, CV och jobbsökning.
-- Utbyggd sida `Erica & CV` med YH-utbildningen Mjukvaruutvecklare vid EC Utbildning i Malmö, erfarenhet, kompetens och vad Erica söker.
+- Utbyggd sida `Erica & CV` med YH-utbildningen Fullstack Java vid Chas Academy i Malmö, erfarenhet, kompetens och vad Erica söker.
 - Ensidigt PDF-CV: `erica-nordlof-cv.pdf`.
 - Driftssatta case och tydligt märkta portfolioprojekt.
 - Direkta länkar till GitHub och LinkedIn.

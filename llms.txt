@@ -18,7 +18,7 @@ Nordlofsystems.se is both the company website for Nordlöf Systems and the profe
 
 ## Erica Nordlöf
 
-Erica is a Malmö-based business owner and software developer with first-hand experience from running Offroad Bumpis, a rental business. She has a Full-Stack Developer certificate from Distansakademin and studies Software Development (Mjukvaruutvecklare, YH) at EC Utbildning in Malmö during 2026-2028.
+Erica is a Malmö-based business owner and software developer with first-hand experience from running Offroad Bumpis, a rental business. She has a Full-Stack Developer certificate from Distansakademin and studies Fullstack Java (YH) at Chas Academy in Malmö during 2026-2028.
 
 Her background also includes property maintenance, gardening, warehouse and transport work. This practical experience informs a preference for clear requirements, written decisions, testable workflows and systems that support real operations.
 
