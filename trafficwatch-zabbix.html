@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="sv-SE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>TrafficWatch – Zabbix övervakningsplattform | Erica Nordlöf</title>
+  <meta name="description" content="Tekniskt portfolio-case: Erica Nordlöf byggde en lokalt verifierad Zabbix 7.0 LTS-plattform med Docker Compose, PostgreSQL, Agent 2, HTTP-kontroller, skript och incidentövningar.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="author" content="Erica Nordlöf">
+  <meta name="theme-color" content="#f8f5ef">
+  <link rel="canonical" href="https://nordlofsystems.se/trafficwatch-zabbix.html">
+  <link rel="icon" href="/ns-favicon-v3.ico" type="image/x-icon" sizes="16x16 32x32 48x48">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/ns-favicon-16-v3.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="/ns-favicon-32-v3.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/ns-favicon-48-v3.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="/ns-apple-touch-icon-v3.png" sizes="180x180">
+  <link rel="manifest" href="/manifest.webmanifest?v=3">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:site_name" content="Nordlöf Systems">
+  <meta property="og:title" content="TrafficWatch – Zabbix övervakningsplattform | Erica Nordlöf">
+  <meta property="og:description" content="Zabbix 7.0 LTS, Linux, Docker Compose, PostgreSQL, Agent 2, API-automation och incidentövningar i ett dokumenterat portfolio-case.">
+  <meta property="og:url" content="https://nordlofsystems.se/trafficwatch-zabbix.html">
+  <meta property="og:image" content="https://nordlofsystems.se/social-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TrafficWatch – Zabbix övervakningsplattform">
+  <meta name="twitter:description" content="Lokalt verifierat övervakningslabb med Zabbix, Linux, Docker, PostgreSQL och skript.">
+  <meta name="twitter:image" content="https://nordlofsystems.se/social-card.png">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://nordlofsystems.se/#organization","name":"Nordlöf Systems","legalName":"Nordlöf Nordic","url":"https://nordlofsystems.se/","logo":"https://nordlofsystems.se/logo.svg","email":"erica@nordlofsystems.se","founder":{"@id":"https://nordlofsystems.se/#erica"}},{"@type":"Person","@id":"https://nordlofsystems.se/#erica","name":"Erica Nordlöf","url":"https://nordlofsystems.se/om.html","jobTitle":"Systemutvecklare och företagare","sameAs":["https://github.com/EricaNordlof","https://www.linkedin.com/in/erica-nordlöf/"]},{"@type":"WebSite","@id":"https://nordlofsystems.se/#website","url":"https://nordlofsystems.se/","name":"Nordlöf Systems","inLanguage":"sv-SE","publisher":{"@id":"https://nordlofsystems.se/#organization"}},{"@type":"WebPage","@id":"https://nordlofsystems.se/trafficwatch-zabbix.html#webpage","url":"https://nordlofsystems.se/trafficwatch-zabbix.html","name":"TrafficWatch – Zabbix övervakningsplattform | Erica Nordlöf","description":"Tekniskt portfolio-case med Zabbix 7.0 LTS, Linux, Docker Compose, PostgreSQL, Agent 2, HTTP-kontroller, skript och incidentövningar.","inLanguage":"sv-SE","isPartOf":{"@id":"https://nordlofsystems.se/#website"},"author":{"@id":"https://nordlofsystems.se/#erica"},"mainEntity":{"@id":"https://nordlofsystems.se/trafficwatch-zabbix.html#software"}},{"@type":"SoftwareSourceCode","@id":"https://nordlofsystems.se/trafficwatch-zabbix.html#software","name":"TrafficWatch – Zabbix Monitoring Platform","description":"Lokalt verifierat Zabbix 7.0 LTS-labb med Docker Compose, PostgreSQL, Agent 2, HTTP-kontroller, API-baserad provisionering, incidentövningar och driftdokumentation.","codeRepository":"https://github.com/EricaNordlof/trafficwatch-zabbix-platform","url":"https://nordlofsystems.se/trafficwatch-zabbix.html","programmingLanguage":["Python","Shell","JavaScript"],"runtimePlatform":["Docker","Linux","Zabbix 7.0 LTS","PostgreSQL"],"author":{"@id":"https://nordlofsystems.se/#erica"},"license":"https://opensource.org/license/mit"}]}</script>
+  <script src="site.js" defer></script>
+</head>
+<body class="trafficwatch-page">
+  <a class="skip-link" href="#main">Hoppa till innehållet</a>
+  <header class="site-header" data-header>
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="Nordlöf Systems, startsida"><span class="brand-mark" aria-hidden="true"><span>N</span><span>S</span></span><span class="brand-word">Nordlöf Systems</span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav" data-menu-button><span class="sr-only">Öppna meny</span><span></span><span></span></button>
+      <nav class="main-nav" id="main-nav" aria-label="Huvudmeny" data-menu><a href="tjanster.html">Tjänster</a><a href="losningar.html">Lösningar</a><a href="case.html" aria-current="page">Case</a><a href="om.html">Erica &amp; CV</a><a class="nav-cta" href="kontakt.html">Kontakta Erica <span aria-hidden="true">→</span></a></nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <nav class="breadcrumbs shell" aria-label="Brödsmulor"><a href="index.html">Start</a><span aria-hidden="true">/</span><a href="case.html">Case</a><span aria-hidden="true">/</span><span aria-current="page">TrafficWatch</span></nav>
+
+    <section class="project-hero">
+      <div class="shell project-hero-grid">
+        <div class="project-hero-copy reveal">
+          <p class="eyebrow crosshair">Portfolio · Zabbix 7.0 LTS · lokalt verifierad</p>
+          <h1>Övervakning som går att starta, testa och felsöka.</h1>
+          <p class="project-hero-lead">TrafficWatch är ett containerbaserat övervakningslabb för tre simulerade transporttjänster. Projektet visar hur driftbehov kan omsättas till mätvärden, larm, automation, incidentövningar och dokumenterade återställningsvägar.</p>
+          <div class="hero-actions"><a class="button button-lime" href="https://github.com/EricaNordlof/trafficwatch-zabbix-platform" target="_blank" rel="noopener">Öppna repository <span aria-hidden="true">→</span></a><a class="button button-outline" href="case.html">Alla projekt <span aria-hidden="true">→</span></a></div>
+          <div class="project-tags" aria-label="Tekniker"><span>Zabbix 7.0 LTS</span><span>Linux</span><span>Docker Compose</span><span>PostgreSQL</span><span>Agent 2</span><span>Python</span><span>Bash</span></div>
+        </div>
+
+        <aside class="project-signal-panel reveal" aria-label="Projektstatus">
+          <div class="signal-header"><span>TRAFFICWATCH / LOCAL LAB</span><span class="signal-live"><i></i>VERIFIED</span></div>
+          <div class="signal-grid">
+            <article><strong>3</strong><span>simulerade tjänster</span></article>
+            <article><strong>7</strong><span>Compose-tjänster</span></article>
+            <article><strong>30 s</strong><span>planerat kontrollintervall</span></article>
+            <article><strong>4</strong><span>drift- och incident-skript</span></article>
+          </div>
+          <div class="signal-services"><span><i></i>Road API</span><span><i></i>Rail API</span><span><i></i>Ferry API</span></div>
+          <code class="signal-command">docker compose up -d --build</code>
+        </aside>
+      </div>
+      <div class="shell project-disclaimer reveal"><strong>Avgränsning:</strong> Fristående portfolio-labb. Ingen koppling till Trafikverkets interna system eller produktionsmiljöer.</div>
+    </section>
+
+    <section class="project-proof-strip" aria-label="Projektöversikt">
+      <div class="shell">
+        <div><strong>Zabbix</strong><span>server, webb och Agent 2</span></div>
+        <div><strong>Docker</strong><span>reproducerbar lokal miljö</span></div>
+        <div><strong>Automation</strong><span>Python och Bash</span></div>
+        <div><strong>Incident</strong><span>stoppa, upptäck, felsök, återställ</span></div>
+        <div><strong>Drift</strong><span>runbook, backup, test och säkerhet</span></div>
+      </div>
+    </section>
+
+    <section class="section-pad">
+      <div class="shell section-heading reveal"><p class="eyebrow">Från behov till teknisk lösning</p><h2>Inte bara en installerad dashboard.</h2><p class="section-lead">Projektet är byggt för att visa hela kedjan: design, driftsättning, datainsamling, larmmodell, felsökning, återställning och dokumentation.</p></div>
+      <div class="shell project-story-grid reveal">
+        <article class="project-story-card"><span>01</span><h3>Behovet</h3><p>Tre tjänster ska kunna följas separat. Driftstopp och långsam respons behöver gå att upptäcka snabbt, samtidigt som lösningen ska vara begriplig att förvalta.</p></article>
+        <article class="project-story-card"><span>02</span><h3>Designen</h3><p>Zabbix Server, webbgränssnitt, PostgreSQL, Agent 2 och mål-API:er separeras i Docker Compose. Konfiguration och driftsteg versionsstyras tillsammans med koden.</p></article>
+        <article class="project-story-card"><span>03</span><h3>Verifieringen</h3><p>Zabbix-servern och samtliga tre API:er körs lokalt. Hälsosvar, systemversion och startflöde är verifierade; provisionering och incidentövningar ingår som skript.</p></article>
+      </div>
+    </section>
+
+    <section class="section-pad project-evidence-section">
+      <div class="shell section-heading reveal"><p class="eyebrow">Faktisk körning</p><h2>Lokalt verifierad miljö.</h2><p class="section-lead">Bilderna nedan är beskurna från den lokala körningen: Zabbix 7.0.29 rapporterar att servern är igång och de tre mål-API:erna returnerar status <code>ok</code>.</p></div>
+      <div class="shell evidence-stack reveal">
+        <figure class="evidence-system-card"><div class="evidence-copy"><span class="evidence-kicker">Zabbix server</span><h3>Server och frontend svarar.</h3><p>Systeminformationen visar Zabbix Server och frontend i version 7.0.29 samt aktiv serveranslutning.</p></div><div class="evidence-image"><img src="trafficwatch-zabbix-system.png" width="685" height="185" alt="Zabbix systeminformation som visar att Zabbix server körs och version 7.0.29"></div></figure>
+        <div class="api-evidence-grid">
+          <figure class="api-evidence-card"><figcaption><span>Road API</span><strong>status: ok</strong></figcaption><img src="trafficwatch-road-api.png" width="820" height="175" alt="Lokalt hälsosvar från Road API med status ok"></figure>
+          <figure class="api-evidence-card"><figcaption><span>Rail API</span><strong>status: ok</strong></figcaption><img src="trafficwatch-rail-api.png" width="820" height="175" alt="Lokalt hälsosvar från Rail API med status ok"></figure>
+          <figure class="api-evidence-card"><figcaption><span>Ferry API</span><strong>status: ok</strong></figcaption><img src="trafficwatch-ferry-api.png" width="820" height="175" alt="Lokalt hälsosvar från Ferry API med status ok"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad architecture-section">
+      <div class="shell split-heading reveal">
+        <div><p class="eyebrow">Arkitektur</p><h2>Separata komponenter. Tydliga felgränser.</h2><p>Databas, Zabbix-server, webbgränssnitt, agent och måltjänster körs separat. Det gör miljön enklare att felsöka, byta ut och skala vidare.</p></div>
+        <div class="traffic-architecture" role="img" aria-label="Arkitektur med Zabbix Web, Zabbix Server, PostgreSQL, Agent 2 och tre övervakade API-tjänster">
+          <div class="arch-node arch-node-web"><small>OPERATÖR</small><strong>Zabbix Web</strong><span>port 8080</span></div>
+          <div class="arch-connector"><span>status · problem · konfiguration</span></div>
+          <div class="arch-node arch-node-server"><small>ÖVERVAKNING</small><strong>Zabbix Server</strong><span>pollers · triggers · historik</span></div>
+          <div class="arch-branch">
+            <div class="arch-node"><small>AGENT</small><strong>Zabbix Agent 2</strong><span>Linux- och containermått</span></div>
+            <div class="arch-node"><small>DATALAGER</small><strong>PostgreSQL</strong><span>konfiguration och historik</span></div>
+          </div>
+          <div class="arch-connector"><span>HTTP-kontroller · status · svarstid</span></div>
+          <div class="arch-targets"><span>Road API</span><span>Rail API</span><span>Ferry API</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad project-build-section">
+      <div class="shell section-heading reveal"><p class="eyebrow">Det jag byggde</p><h2>Sex leveranser i samma repository.</h2></div>
+      <div class="shell project-delivery-grid reveal">
+        <article><span>01</span><h3>Compose-miljö</h3><p>Sju separata tjänster, healthchecks, beständig databasvolym och nätverk med tydliga beroenden.</p></article>
+        <article><span>02</span><h3>Övervakningsmål</h3><p>Road, Rail och Ferry API med normal hälsa, medvetet långsam endpoint och kontrollerat 503-fel.</p></article>
+        <article><span>03</span><h3>API-provisionering</h3><p>Idempotent Python-skript för värdgrupp, värdar, HTTP-items, triggers och tags i Zabbix.</p></article>
+        <article><span>04</span><h3>Incidentövningar</h3><p>Bash-skript som stoppar och återställer en vald tjänst utan att förstöra databas eller konfiguration.</p></article>
+        <article><span>05</span><h3>Backup och kontroll</h3><p>PostgreSQL-backup med komprimering och SHA-256-kontrollsumma samt separat hälsokontroll.</p></article>
+        <article><span>06</span><h3>Driftdokumentation</h3><p>Arkitektur, operationsmanual, incident-runbook, säkerhetsbedömning, testplan och intervjunoteringar.</p></article>
+      </div>
+    </section>
+
+    <section class="section-pad incident-section">
+      <div class="shell split-heading reveal">
+        <div><p class="eyebrow">Kontrollerad incident</p><h2>Från grön signal till återställd tjänst.</h2><p>Incidentflödet är avsiktligt enkelt att repetera. Poängen är inte dramatik; poängen är att bevisa upptäckt, diagnos och återställning.</p></div>
+        <ol class="incident-flow">
+          <li><span>01</span><div><h3>Verifiera baslinjen</h3><p>Kontrollera att Zabbix och samtliga tjänster svarar.</p><code>./scripts/healthcheck.sh</code></div></li>
+          <li><span>02</span><div><h3>Skapa driftstopp</h3><p>Stoppa Rail API genom ett säkert testskript.</p><code>./scripts/simulate_incident.sh rail</code></div></li>
+          <li><span>03</span><div><h3>Avgränsa felet</h3><p>Kontrollera containerstatus, loggar och endpoint.</p><code>docker compose logs --tail=200 rail-api</code></div></li>
+          <li><span>04</span><div><h3>Återställ och verifiera</h3><p>Starta tjänsten och bekräfta nya mätvärden.</p><code>./scripts/restore_service.sh rail</code></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section-pad project-scope-section">
+      <div class="shell section-heading reveal"><p class="eyebrow">Ärlig omfattning</p><h2>Vad projektet visar — och vad det inte påstår.</h2></div>
+      <div class="shell project-scope-grid reveal">
+        <article class="scope-positive"><span>Detta visar</span><h3>Praktisk systemförståelse</h3><ul><li>Design och driftsättning av en flerkomponentsmiljö</li><li>Linux, containers, PostgreSQL och Zabbix</li><li>Skriptutveckling i Python och Bash</li><li>Övervakningslogik, triggers och incidentflöden</li><li>Testbarhet, backup, säkerhet och dokumentation</li></ul></article>
+        <article class="scope-boundary"><span>Avgränsning</span><h3>Ett labb — inte lånad senioritet</h3><ul><li>Projektet är lokalt och fristående, inte en produktionsmiljö</li><li>Det ersätter inte flerårig drift i en stor organisation</li><li>HA, SSO, TLS och Zabbix proxies är dokumenterade nästa steg</li><li>Påståenden hålls till sådant som finns i koden eller har verifierats lokalt</li><li>Ingen koppling finns till en arbetsgivares interna infrastruktur</li></ul></article>
+      </div>
+    </section>
+
+    <section class="section-pad production-path-section">
+      <div class="shell split-heading reveal"><div><p class="eyebrow">Nästa nivå</p><h2>Så skulle labben utvecklas för större drift.</h2></div><div class="production-path"><article><strong>01</strong><h3>Distribuerad insamling</h3><p>Zabbix proxy per nätsegment eller geografiskt område.</p></article><article><strong>02</strong><h3>Säker åtkomst</h3><p>TLS, SSO, rollbaserad behörighet och extern secrets manager.</p></article><article><strong>03</strong><h3>Hög tillgänglighet</h3><p>HA för Zabbix Server och PostgreSQL samt verifierade återställningstester.</p></article><article><strong>04</strong><h3>Förvaltning</h3><p>Versionsstyrda templates, SLA/SLO, underhållsfönster och change-process.</p></article></div></div>
+    </section>
+
+    <section class="cta-band section-pad">
+      <div class="shell cta-band-inner reveal"><div><p class="eyebrow">Källkod och dokumentation</p><h2>Hela lösningen går att granska.</h2><p>Repositoryt innehåller Compose-filen, servicekoden, provisioneringsskript, driftverktyg och samtliga tekniska dokument.</p></div><div class="cta-actions"><a class="button button-lime" href="https://github.com/EricaNordlof/trafficwatch-zabbix-platform" target="_blank" rel="noopener">Öppna TrafficWatch <span aria-hidden="true">→</span></a><a class="text-link" href="kontakt.html">Kontakta Erica <span aria-hidden="true">→</span></a></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand"><a class="brand" href="index.html" aria-label="Nordlöf Systems, startsida"><span class="brand-mark" aria-hidden="true"><span>N</span><span>S</span></span><span class="brand-word">Nordlöf Systems</span></a><p>Verksamhetsnära systemutveckling för uthyrningsföretag och mindre verksamheter i hela Sverige.</p><p class="availability"><span></span> Tar emot avgränsade uppdrag</p></div>
+      <div><h2>Tjänster</h2><a href="bokningssystem-uthyrning.html">Bokningssystem</a><a href="lagerhantering-uthyrning.html">Lager och tillgänglighet</a><a href="webbplats-uthyrningsforetag.html">Webbplatser</a><a href="integrationer-uthyrningssystem.html">Integrationer</a></div>
+      <div><h2>Nordlöf Systems</h2><a href="case.html">Case och projekt</a><a href="om.html">Erica &amp; CV</a><a href="erica-nordlof-cv.pdf">CV som PDF</a><a href="samarbeta.html">Samarbeta</a><a href="https://github.com/EricaNordlof" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/erica-nordlöf/" target="_blank" rel="noopener">LinkedIn</a></div>
+      <div class="footer-contact"><h2>Kontakt</h2><a href="mailto:erica@nordlofsystems.se">erica@nordlofsystems.se</a><a href="tel:+46793442520">079-344 25 20</a><address>Lövviksgatan 10<br>213 74 Malmö</address></div>
+    </div>
+    <div class="shell footer-bottom"><p>© 2026 Nordlöf Systems · Ett varumärke inom Nordlöf Nordic · Enskild firma · Org.nr 861225-3966</p><div><a href="integritet.html">Integritet</a><a href="villkor.html">Villkor</a></div></div>
+  </footer>
+</body>
+</html>
