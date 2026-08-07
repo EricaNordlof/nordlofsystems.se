@@ -37,6 +37,7 @@ The main commercial specialisation is digital systems for rental businesses thro
 
 ## Selected work and status
 
+- Fältivo — first SaaS product by Erica Nordlöf; live multi-tenant project-management platform using Next.js, React, Cloudflare Workers, D1, private R2, Drizzle ORM and Stripe. Product site: https://faltivo.se/ App: https://app.faltivo.se/
 - TrafficWatch — locally verified Zabbix 7.0 LTS monitoring lab with Linux, Docker Compose, PostgreSQL, Agent 2, API automation, incident simulations and operations documentation.
 - Offroad Bumpis — own rental business and live production workflows.
 - Safe Standard — own rental documentation product and deployed demo.
@@ -51,6 +52,7 @@ The main commercial specialisation is digital systems for rental businesses thro
 - Home and overview: https://nordlofsystems.se/
 - Erica and CV: https://nordlofsystems.se/om.html
 - Cases and technical projects: https://nordlofsystems.se/case.html
+- Fältivo SaaS case: https://nordlofsystems.se/faltivo-saas.html
 - TrafficWatch Zabbix case: https://nordlofsystems.se/trafficwatch-zabbix.html
 - Services: https://nordlofsystems.se/tjanster.html
 - Rental-system solutions: https://nordlofsystems.se/losningar.html

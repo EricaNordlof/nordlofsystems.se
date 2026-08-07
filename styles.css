@@ -3778,3 +3778,82 @@ main {
     font-size: 0.63rem;
   }
 }
+
+
+/* Fältivo SaaS portfolio case — 2026-08-07 */
+.case-grid.four-up {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.case-grid.four-up > :first-child {
+  grid-column: auto;
+}
+.faltivo-home-card {
+  background:
+    radial-gradient(circle at 92% 8%, rgba(197, 138, 53, 0.18), transparent 18rem),
+    linear-gradient(145deg, #f8f1e8, #ffffff 58%);
+}
+.faltivo-card-brand {
+  width: min(260px, 78%);
+  margin: -24px 0 24px;
+}
+.faltivo-card-brand img { width: 100%; }
+.faltivo-home-card .case-links { margin-top: auto; margin-bottom: 0; }
+.faltivo-home-card .case-links a { position: relative; z-index: 2; }
+.case-logo-row { width: min(310px, 82%); margin: 0 0 26px; }
+.case-logo-row img { width: 100%; }
+.faltivo-case-study { background: linear-gradient(180deg, rgba(197,138,53,.035), transparent 70%); }
+.faltivo-page .project-hero { background: radial-gradient(circle at 82% 6%, rgba(197,138,53,.13), transparent 28rem); }
+.faltivo-inline-logo { width: min(360px, 72vw); margin: 0 0 28px; }
+.faltivo-inline-logo img { width: 100%; }
+.faltivo-brand-panel {
+  position: relative;
+  padding: clamp(28px, 3.2vw, 44px);
+  border: 1px solid rgba(16,46,56,.13);
+  border-radius: 30px;
+  overflow: hidden;
+  background: linear-gradient(155deg, #10201b, #173c32 58%, #1e6653);
+  box-shadow: 0 30px 80px rgba(16,32,27,.18);
+  color: #f9f7f1;
+}
+.faltivo-brand-panel::after {
+  position: absolute; width: 260px; height: 260px; right: -90px; bottom: -100px;
+  border: 1px solid rgba(242,204,134,.28); border-radius: 50%; content: "";
+}
+.faltivo-panel-head { display: grid; grid-template-columns: 48px 1fr auto; gap: 14px; align-items: center; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,.12); }
+.faltivo-panel-head img { width: 48px; border-radius: 12px; }
+.faltivo-panel-head span { font-family: var(--mono); font-size: .68rem; letter-spacing: .08em; }
+.faltivo-panel-head b { color: #f2cc86; font-family: var(--mono); font-size: .68rem; letter-spacing: .08em; }
+.faltivo-panel-metrics { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; margin: 26px 0; background: rgba(255,255,255,.12); }
+.faltivo-panel-metrics article { min-height: 126px; padding: 20px; background: rgba(10,29,24,.76); }
+.faltivo-panel-metrics strong, .faltivo-panel-metrics span { display:block; }
+.faltivo-panel-metrics strong { margin-bottom: 7px; color: #f2cc86; font-size: 1.65rem; line-height: 1.1; }
+.faltivo-panel-metrics span { color: rgba(249,247,241,.7); font-size: .78rem; }
+.faltivo-panel-stack { display:flex; flex-wrap:wrap; gap:8px; position:relative; z-index:1; }
+.faltivo-panel-stack span { padding: 7px 10px; border:1px solid rgba(242,204,134,.22); border-radius:999px; color:#f2cc86; font-family:var(--mono); font-size:.62rem; }
+.faltivo-brand-panel > p { position:relative; z-index:1; margin:24px 0 0; color:rgba(249,247,241,.7); font-size:.9rem; }
+.saas-architecture { display:grid; gap:14px; width:100%; }
+.saas-layer { padding:22px; border:1px solid rgba(16,46,56,.13); border-radius:20px; background:rgba(255,255,255,.86); box-shadow:0 16px 42px rgba(35,48,53,.07); }
+.saas-layer small,.saas-layer strong,.saas-layer span { display:block; }
+.saas-layer small { margin-bottom:5px; color:var(--orange); font-family:var(--mono); font-size:.61rem; letter-spacing:.08em; }
+.saas-layer strong { color:var(--cream); font-size:1.08rem; }
+.saas-layer span { margin-top:3px; color:var(--muted); font-size:.78rem; }
+.saas-ui { border-color:rgba(197,138,53,.28); }
+.saas-worker { background:linear-gradient(145deg,#f8f1e8,#fff); border-color:rgba(197,138,53,.34); }
+.saas-arrow { text-align:center; color:var(--muted); font-family:var(--mono); font-size:.62rem; letter-spacing:.06em; text-transform:uppercase; }
+.saas-branches { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+.faltivo-page code { overflow-wrap:anywhere; }
+.faltivo-page .project-disclaimer a { font-weight:700; }
+@media (max-width: 920px) {
+  .case-grid.four-up { grid-template-columns: 1fr; }
+  .case-grid.four-up > :first-child { grid-column: auto; }
+  .faltivo-card-brand { margin-top: -8px; }
+  .saas-branches { grid-template-columns:1fr; }
+}
+@media (max-width: 560px) {
+  .faltivo-panel-metrics { grid-template-columns:1fr 1fr; }
+  .faltivo-panel-metrics article { min-height:108px; padding:16px; }
+  .faltivo-panel-head { grid-template-columns:42px 1fr; }
+  .faltivo-panel-head img { width:42px; }
+  .faltivo-panel-head b { grid-column:2; }
+}
+.faltivo-home-card .case-links { padding-top: 38px; }

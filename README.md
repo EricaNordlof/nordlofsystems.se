@@ -33,3 +33,8 @@ Ingen byggprocess krävs.
 - Tangentbordsstöd, reducerad rörelse och tydliga fokusmarkeringar.
 - Canonical, Open Graph, person- och företagsdata i JSON-LD, sitemap, robots och llms.txt.
 - Premiumlogotyp, Safari-favicon, Apple Touch Icon, webbappikoner och social delningsbild.
+
+
+## Uppdatering 2026-08-07
+
+Fältivo har lagts till som Erica Nordlöfs första SaaS-case, med länkar till https://faltivo.se/ och https://app.faltivo.se/. Ny fördjupningssida: `faltivo-saas.html`.
